@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class='header__text'>Please sign up</h1>
+        <form id="input__form" novalidate>
+            <div class='input__box' >
+                <input type="text" class='formInputs' id='input__name' placeholder="First name" required>
+                <div id='mistake_name'>
+                    <span>Please provide a valid username</span>
+                </div>
+            </div>
+            <div class='input__box' >
+                <input type="text" class='formInputs' id='input__surname' placeholder="Last name" required>
+                <div id='mistake_surname'>
+                    <span>Please provide a valid lastname</span>
+                </div>
+            </div>
+            <div class='input__box' >
+                <input type="text" class='formInputs' id='input__address' placeholder="Email address" required>
+                <div id='mistake_email'>
+                    <span>Please provide a valid email address</span>
+                </div>
+            </div>
+            <div class='input__box'>
+                <input type="password" class='formInputs' id='input__password' placeholder="Password" required>
+                <div id='mistake_password'>
+                    <span>Please provide a valid password</span>
+                </div>
+            </div>
+            <button type="submit" id="button__sign"> Sign Up</button>
+        </form>
+        <div class='sign__now'>
+            <p id='sign__in'>Sign in now</p>
+        </div>
+    </div>
+    <div class='wrapper'>
+        <h1 class='header__text'>Please sign in</h1>
+        <form id="autorization" novalidate>
+            <div class='input__box'>
+                <input type="text" id='signIn__email' placeholder="Email address" required>
+            </div>
+            <div class='input__box'>
+                <input type="password" id='signIn__password' placeholder="password" required>
+                <div id='signIn__mistake'>
+                    <span>incorrect email or password</span>
+                </div>
+            </div>
+            <button type="submit" id="signIn__button"> Sign In</button>
+            <div class='sign__now'>
+                <p id='sign__up'>Sign Up now</p>
+            </div>
+        </form>
+    </div>
+    <div class="account">
+        <div class = 'header'>
+            <img class = 'user' src = 'man.png'>
+        </div>
+        <div class = 'info'>
+            <h2 class = 'name__box'>asdasd</h2>
+            <p class = 'email__box'>asdasd</p>
+            <p class = 'job__box'>Designer/Web-developing</p>
+            <hr>
+        </div>
+        <button id="signUp__button"> Sign Up</button>
+    </div>
+    
+    <script src='index.js'></script>
+</body>
+
+</html>
